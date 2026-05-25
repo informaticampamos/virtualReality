@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.3. Construcción de mundos | Creación de espacios virtuales con CoSpaces e inmersión con Gafas 3D </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Miguel Ángel Pamos Ureña" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(logo.png); background-repeat: repeat-x;"><div id="headerContent">Creación de espacios virtuales con CoSpaces e inmersión con Gafas 3D</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_introduccin.html" class="daddy">1. Introducción</a>
+   <ul class="other-section">
+      <li><a href="11_objetivos.html" class="no-ch">1.1. Objetivos</a></li>
+      <li><a href="12_dnde_se_usa_la_vr_actualmente.html" class="no-ch">1.2. ¿Dónde se usa la VR actualmente?</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_cospaces__delightex_.html" class="current-page-parent daddy">2. CoSpaces ( Delightex )</a>
+   <ul>
+      <li><a href="22_primeros_pasos.html" class="no-ch">2.2. Primeros pasos</a></li>
+      <li id="active"><a href="23_construccin_de_mundos.html" class="active daddy">2.3. Construcción de mundos</a>
+      <ul>
+         <li><a href="231_catlogo_de_elementos.html" class="no-ch">2.3.1. Catálogo de elementos</a></li>
+         <li><a href="232_transformacin_y_manipulacin_de_objetos.html" class="no-ch">2.3.2. Transformación y manipulación de objetos</a></li>
+         <li><a href="233_propiedades_y_acciones_avanzadas.html" class="no-ch">2.3.3. Propiedades y acciones avanzadas</a></li>
+         <li><a href="234_animaciones.html" class="no-ch">2.3.4. Animaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="24_lgica_de_programacin__coblocks.html" class="daddy">2.4. Lógica de programación ( CoBlocks)</a>
+      <ul class="other-section">
+         <li><a href="241_categoras_de_bloques.html" class="daddy">2.4.1 Categorías de bloques</a>
+         <ul class="other-section">
+            <li><a href="242_transformar.html" class="no-ch">2.4.2. Transformar</a></li>
+            <li><a href="243_acciones.html" class="no-ch">2.4.3. Acciones</a></li>
+            <li><a href="244_eventos.html" class="no-ch">2.4.4. Eventos</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="25_pon_en_prctica_lo_aprendido.html" class="no-ch">2.5. Pon en práctica lo aprendido</a></li>
+   </ul>
+   </li>
+   <li><a href="3_lapentor.html" class="daddy">3. Lapentor</a>
+   <ul class="other-section">
+      <li><a href="31_captura_de_contenido.html" class="no-ch">3.1. Captura de contenido</a></li>
+      <li><a href="32_configuracin.html" class="no-ch">3.2. Configuración</a></li>
+      <li><a href="33_interactividad__hotspots.html" class="no-ch">3.3. Interactividad ( Hotspots)</a></li>
+      <li><a href="34_reto_tour_virtual_centro_educativo.html" class="no-ch">3.4. Reto. Tour Virtual Centro Educativo</a></li>
+   </ul>
+   </li>
+   <li><a href="4_visualizacin_gafas_3d.html" class="daddy">4. Visualización Gafas 3D</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin.html" class="no-ch">4.1. Configuración</a></li>
+      <li><a href="42_visualizacin_webxr.html" class="no-ch">4.2. Visualización WebXR</a></li>
+   </ul>
+   </li>
+   <li><a href="anexo_gua_didctica.html" class="daddy">Anexo. Guía didáctica</a>
+   <ul class="other-section">
+      <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+      <li><a href="criterios_de_evaluacin.html" class="no-ch">Criterios de evaluación</a></li>
+      <li><a href="saberes_bsicos.html" class="no-ch">Saberes básicos</a></li>
+   </ul>
+   </li>
+   <li><a href="autora_y_descarga_del_proyecto.html" class="no-ch">Autoría y descarga del proyecto</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="22_primeros_pasos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="231_catlogo_de_elementos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.3. Construcción de mundos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id28">
+<div class="iDevice emphasis0" >
+<div id="ta28_120_2" class="block iDevice_content">
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id30">
+<div class="iDevice emphasis0" >
+<div id="ta30_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Al crear un nuevo proyecto, te encontrarás con un <strong>lienzo digital completamente en blanco</strong> (un escenario vacío con una cuadrícula gris) listo para ser diseñado. En el centro del escenario verás un icono azul con forma de cámara cinematográfica: esa es la <strong>Cámara Principal</strong>, que determinará el punto de vista del usuario cuando empiece a jugar o explorar tu mundo virtual.</p>
+<p><img src="mundo1_vacio.PNG" alt="" width="400" height="225" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Antes de empezar a colocar objetos, es fundamental conocer las herramientas principales que ofrece la barra superior de la pantalla:</p>
+<ul>
+<li><strong>🏠 Inicio:</strong> Te permite salir del proyecto actual y volver al panel principal de tus CoSpaces.</li>
+<li><strong>↩️ / ↪️ Deshacer y Rehacer</strong>: Dos botones salvavidas. Si te equivocas colocando un objeto o borras algo por error, pulsa "Deshacer" para volver atrás.</li>
+<li><strong>📱 Encajando (Imán)</strong>: Activa o desactiva la cuadrícula magnética. Te ayudará a que las paredes, suelos y objetos se alineen perfectamente entre sí al moverlos.</li>
+<li><strong>📝 Instrucciones / Enviar</strong>: Espacio para añadir notas sobre tu proyecto o para entregarlo si forma parte de una tarea de clase.</li>
+<li><strong>🛠️ Programar (CoBlocks)</strong>: Al pulsar este botón se abrirá el panel lateral derecho de programación, donde escribirás las líneas de código por bloques para dar vida a tus personajes.</li>
+<li><strong>▶️ Jugar</strong>: El botón de previsualización. Púlsalo en cualquier momento para probar tu escenario en primera persona, interactuar con tu entorno y comprobar si la programación funciona correctamente.<br /><br /></li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper DestacadofpdIdevice" id="id32">
+<div class="iDevice emphasis0" >
+<div class="iDevice_destacadofpd">
+<div id="ta32_167" class="block iDevice_content">
+<h2>¡Cuidado con la cámara!</h2>
+<p><strong>No borres nunca el icono de la cámara azul del centro.</strong> Todo lo que construyas debe estar orientado de forma que la cámara pueda enfocarlo al pulsar el botón "Jugar".</p>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="22_primeros_pasos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="231_catlogo_de_elementos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
