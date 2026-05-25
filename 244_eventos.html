@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.4.4. Eventos | Creación de espacios virtuales con CoSpaces e inmersión con Gafas 3D </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Miguel Ángel Pamos Ureña" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-32"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(logo.png); background-repeat: repeat-x;"><div id="headerContent">Creación de espacios virtuales con CoSpaces e inmersión con Gafas 3D</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_introduccin.html" class="daddy">1. Introducción</a>
+   <ul class="other-section">
+      <li><a href="11_objetivos.html" class="no-ch">1.1. Objetivos</a></li>
+      <li><a href="12_dnde_se_usa_la_vr_actualmente.html" class="no-ch">1.2. ¿Dónde se usa la VR actualmente?</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_cospaces__delightex_.html" class="current-page-parent daddy">2. CoSpaces ( Delightex )</a>
+   <ul>
+      <li><a href="22_primeros_pasos.html" class="no-ch">2.2. Primeros pasos</a></li>
+      <li><a href="23_construccin_de_mundos.html" class="daddy">2.3. Construcción de mundos</a>
+      <ul class="other-section">
+         <li><a href="231_catlogo_de_elementos.html" class="no-ch">2.3.1. Catálogo de elementos</a></li>
+         <li><a href="232_transformacin_y_manipulacin_de_objetos.html" class="no-ch">2.3.2. Transformación y manipulación de objetos</a></li>
+         <li><a href="233_propiedades_y_acciones_avanzadas.html" class="no-ch">2.3.3. Propiedades y acciones avanzadas</a></li>
+         <li><a href="234_animaciones.html" class="no-ch">2.3.4. Animaciones</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="24_lgica_de_programacin__coblocks.html" class="current-page-parent daddy">2.4. Lógica de programación ( CoBlocks)</a>
+      <ul>
+         <li class="current-page-parent"><a href="241_categoras_de_bloques.html" class="current-page-parent daddy">2.4.1 Categorías de bloques</a>
+         <ul>
+            <li><a href="242_transformar.html" class="no-ch">2.4.2. Transformar</a></li>
+            <li><a href="243_acciones.html" class="no-ch">2.4.3. Acciones</a></li>
+            <li id="active"><a href="244_eventos.html" class="active no-ch">2.4.4. Eventos</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="25_pon_en_prctica_lo_aprendido.html" class="no-ch">2.5. Pon en práctica lo aprendido</a></li>
+   </ul>
+   </li>
+   <li><a href="3_lapentor.html" class="daddy">3. Lapentor</a>
+   <ul class="other-section">
+      <li><a href="31_captura_de_contenido.html" class="no-ch">3.1. Captura de contenido</a></li>
+      <li><a href="32_configuracin.html" class="no-ch">3.2. Configuración</a></li>
+      <li><a href="33_interactividad__hotspots.html" class="no-ch">3.3. Interactividad ( Hotspots)</a></li>
+      <li><a href="34_reto_tour_virtual_centro_educativo.html" class="no-ch">3.4. Reto. Tour Virtual Centro Educativo</a></li>
+   </ul>
+   </li>
+   <li><a href="4_visualizacin_gafas_3d.html" class="daddy">4. Visualización Gafas 3D</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin.html" class="no-ch">4.1. Configuración</a></li>
+      <li><a href="42_visualizacin_webxr.html" class="no-ch">4.2. Visualización WebXR</a></li>
+   </ul>
+   </li>
+   <li><a href="anexo_gua_didctica.html" class="daddy">Anexo. Guía didáctica</a>
+   <ul class="other-section">
+      <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+      <li><a href="criterios_de_evaluacin.html" class="no-ch">Criterios de evaluación</a></li>
+      <li><a href="saberes_bsicos.html" class="no-ch">Saberes básicos</a></li>
+   </ul>
+   </li>
+   <li><a href="autora_y_descarga_del_proyecto.html" class="no-ch">Autoría y descarga del proyecto</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="243_acciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="25_pon_en_prctica_lo_aprendido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.4.4. Eventos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id53">
+<div class="iDevice emphasis0" >
+<div id="ta53_138_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Los bloques de la categoría <strong>Eventos</strong> te permiten hacer que tu mundo virtual responda a las acciones del usuario (<strong>hacer clic, mover el ratón o pulsar teclas</strong>) o a lo que ocurre en el propio entorno (como el <strong>choque entre dos elementos</strong>). Son bloques con forma de "boca" o contenedor, lo que significa que <strong>debes meter los bloques azules (movimiento) o morados (acciones) dentro de ellos.</strong></p>
+<p><strong><img src="nuevas11_eventos.PNG" alt="" width="356" height="740" style="display: block; margin-left: auto; margin-right: auto;" /></strong></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id54">
+<div class="iDevice emphasis0" >
+<div id="ta54_139_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>Bloques de entrada</h2>
+<ul>
+<li style="text-align: justify;"><span style="font-family: 'courier new', courier, monospace;">activacion de [Cowboy]:</span> Este bloque ejecuta el código que tenga dentro en el momento exacto en que el usuario <strong>hace clic sobre el personaje mientras juega</strong>. Es ideal para activar diálogos o movimientos cuando el jugador se acerca a un guía.</li>
+<li style="text-align: justify;"><span style="font-family: 'courier new', courier, monospace;">mantenido el ratón sobre [Cowboy]</span>: Activa una acción cuando el jugador <strong>pasa el cursor por encima del personaje (sección hace), y otra diferente cuando el cursor se quita de encima (sección no hace).</strong> Es genial para crear efectos visuales o pistas rápidas.</li>
+<li style="text-align: justify;"><span style="font-family: 'courier new', courier, monospace;">cuando la tecla [arriba] es [presionado]:</span> Te permite controlar el entorno con el teclado. <strong>Puedes configurar cualquier tecla (flechas, espacio, letras) para que, al pulsarla, ocurra algo en tu mundo</strong> (por ejemplo, hacer que un coche avance o que un personaje salte).</li>
+</ul>
+<h2>Bloques de colisión </h2>
+<p><span style="font-family: 'courier new', courier, monospace;">en colisión de [Cowboy] con [otroElemento]:</span> Este bloque detecta el contacto físico en el espacio 3D.</p>
+<ul>
+<li>Los bloques que <strong>metas en de entrada</strong> se ejecutarán en el instante en que los dos objetos se toquen (por ejemplo, si el Cowboy choca contra una puerta, que esta se abra).</li>
+<li>Los bloques que <strong>metas en de salida</strong> se activarán cuando los objetos dejen de tocarse y se separen.</li>
+</ul>
+</div>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice em_iDevice_activity" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">¡Hacer que el Cowboy hable al pincharle!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_141_2" class="block iDevice_content">
+<p style="text-align: justify;">Debes estructurar tus bloques combinando un Evento amarillo con una Acción morada:</p>
+<ol>
+<li style="text-align: justify;">Coloca primero el bloque amarillo: <span style="font-family: 'courier new', courier, monospace;">activacion de [Cowboy].</span></li>
+<li style="text-align: justify;">Encaja justo dentro de su "boca" el bloque morado: <span style="font-family: 'courier new', courier, monospace;">decir [¡Hola, forastero! Bienvenido al pueblo.] por [3] seg.</span></li>
+</ol>
+<p><strong>¡Listo! Cuando le des al botón "Jugar"</strong>, el vaquero estará tranquilo en su sitio y solo hablará cuando el usuario interactúe directamente haciendo clic sobre él.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id57">
+<div class="iDevice emphasis0" >
+<div id="ta57_142_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="img0.3.png" width="601" height="202" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="243_acciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="25_pon_en_prctica_lo_aprendido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
